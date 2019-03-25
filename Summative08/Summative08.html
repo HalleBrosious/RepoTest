@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+    <script src="../js/constants.js"></script>
+
+    <!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+    <title>MIS362 Summative08</title>
+</head>
+
+<body onload="setVariables()"> 
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center">IT Investment and Planning</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="FirstName">First Name:</label>
+        <input class="form-control" name="FirstName" id="FirstName"  type="text" value="default first name" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="LastName">Last Name:</label>
+        <input class="form-control" name="LastName" id="LastName"  type="text" value="default last name" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="pin">StarID:</label>
+        <input class="form-control" name="pin" id="pin"  type="text" value="default StarID" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="email">Email:</label>
+        <input class="form-control" name="email" id="email"  type="email" value="default email address" readonly="readonly">
+      </div>
+    </div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="xClass" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative08" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+<!-- Calculate the correct path for saving the files -->
+<script>Path = startPath + xStarID + "&#92;OneDrive - MNSCU&#92;" + xClass + "&#92;" + document.getElementById("assignment").value + "&#92;"; </script> 
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            1000 Points <hr />
+        </div>
+      
+<!-- -start-objectives-start -->
+    <div class="col-lg-12"><a href="#Objectives" class="btn btn-info" data-toggle="collapse">Learning Objectives</a></div>      
+      <div id="Objectives" class=" collapse in col-lg-12">
+
+<!--Above this line similar except for Assignment number and title   -->
+  
+          <p>These exercises introduce the concepts of IT investment and planning.</p>
+          <p>After completing this assignment you will be able to:</p>
+          <ol>
+            <li>Identify IT related financial concerns</li>
+            <li>Structure a digital investment portfolio</li>
+            <li>Identify basic project management practices and limitations</li>
+           </ol>
+          <hr />
+        </div>
+  
+  
+        <div class="col-lg-12"><a href="#Overview" class="btn btn-info" data-toggle="collapse">Assignment Overview</a></div>
+      
+      <div id="Overview" class="collapse in col-lg-12">
+      <p>The goal of this assignment is to familiarize you with the various financial, project &amp; resource management systems. <br />
+          You are expected to devlop a working knowledge of the following.<br />
+            If you are having trouble there are several resources available, besides a Google Search<br />
+            You can also ask a teaching assistant or ask the instructor for assistance.</p>
+          <ol>
+            <li>IT Financial Management Tools
+            </li>
+            <li>IT Sourcing and Contract Management </li>
+            <li>Investment Structure</li>
+            <li>Large Scale Planning Issues</li>
+
+          </ol>
+          <hr />                
+         </div>
+      
+    <div class=" col-lg-12"><a href="#Exercise01" class="btn btn-info" data-toggle="collapse">Exercise 1-IT Financial Management</a><a href="#Exercise01"></a></div>        
+      
+     <div id="Exercise01" class="collapse in col-lg-12"> 
+          <p>Read and review the &quot;IT Financial Management&quot; section of chapter 8.<br />
+          </p>
+            <p>Then research and answer the following questions.<br />Keep in mind that technology continually changes, and there are also costs associated with adopting new technology.<br />Consider what digital skills are most interesting to you.<br />
+          </p>
+                <p>
+                    (50) 1. List some of the shortcomings of the traditional approaches to IT financing?</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+                <input name="q1" id="q1" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text">
+                <br />
+                <br />
+                <p>
+                    (50) 2. Choose one of the shortcomings you listed in question 1 and briefly explain how digital technology can be used to reduce or eliminate the effect.</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+                <input name="q2" id="q2" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text">
+                <br />
+                <br />
+                <p>
+                    (50) 3. Briefly explain the basis of &#39;financial management disruption&#39; due to changing technology, especially with respect to Agile operating models.</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+                <input name="q3" id="q3" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text">
+                <br />
+                <br />
+                <p>
+                    Review the material in the &quot;Beyond Budgeting&quot; section, and consider some of the problems with the &quot;budget contract&quot; method.
+                </p>
+                <p>
+                    Think about the issues of new product and process development, and the idea of trying to account for costs.&nbsp; Remember the purpose of financial management from an organization standpoint.</p>
+                <p>
+                     Think about issues raised while reading &quot;The Phoenix Project&quot;.<br />
+                    (50) 4. Provide a brief statement on how organizations can address the issue of &quot;Design in Process&quot; (DIP) which is analogous to &quot;Work in Process&quot; (WIP)</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+                <input name="q4" id="q4" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text">
+                <br />
+                <p> Open a new Word Document. <br />
+                    Do research on the internet, look at available courses and material on Lynda.com<br />
+                    Synthesize the financial management, lean accounting, agile process information that you have learned about in this course and in this chapter.<br />
+                    Feel free to consult with the professor, teaching assistant, group members, your mentor and fellow classmates.</p>
+                <p> Write no more than one page listing and commenting on at least five important issues a typical manufacturing organization will be facing due to changing technologies; for each item briefly state what can be done to address the issue.<br />
+                    Once you have completed this document, print it as a .pdf file named 'MyTechIssues'.</p>
+           
+
+                <p>(200) 5. Save your file 'MyTechIssues.pdf' to the ' <span id="aPath" ></span>              
+                <script>document.getElementById("aPath").innerHTML = Path; </script>' folder.<br /> </p>
+                
+       </div>   
+
+      <div  class="col-lg-12  text-danger" >
+         <h2>MyTechIssues.pdf</h2>
+          <hr />
+      </div>
+
+      
+        <div class="col-lg-12"><a href="#Exercise02" class="btn btn-info" data-toggle="collapse">Exercise 2-Project Management</a></div>
+        <div id="Exercise02" class="collapse in col-lg-12">  
+              <p>Read Lab 08 '<a href="https://github.com/dm-academy/aitm-labs/blob/master/Lab-08/08-combined-lab.adoc" class="bg-info text-white" target="_blank">Project Management</a>' <br />
+              Scan the <a href="https://en.wikipedia.org/wiki/Enterprise_resource_planning" class="bg-info text-white" target="_blank">Wikipedia article on ERP</a>.<br />
+              Scan the <a href="http://txprojectone.org/documents/ERP_Advisory_Council_Report.pdf" class="bg-info text-white" target="_blank">State of Texas ERP plan</a>.<br />
+              You will spend the class working with your group to 
+develop a detailed project plan based on this lab, as modified below.<br />
+              The main purpose of this exercise is to experience the process.<br />
+              Work with your team to make decisions, and record these decisions in an Excel spreadsheet.<br />
+              You will not use an 'online Clarizen tool' as described in the lab.<br />
+              Each student is responsible for contributing to the 
+finished product, and each will upload the project plan as a .pdf file.</p>
+              
+              <p>
+              Clarifications to the instructions<br />
+              Your team will have four people, the team works together to assign roles:
+              </p><ul>
+              	<li>Project Management Office Lead</li>
+                <li>Technical Lead</li>
+                <li>Process Lead</li>
+                <li>Change Lead</li>
+              </ul>
+              
+              <br />
+              Items to consider:<br />
+              <ul>
+              	<li>Project runs from 1/1/2019 to 12/31/2019</li>
+                <li>Project budget is $35,000,000.00</li>
+                <li> There are four sub-projects or periods, that overlap, as follows:
+                    <ul>
+                        <li>Jan-Feb: Vision, charter and requirements (not addressed in your plan)</li>
+                        <li>March-June: Core technical platform</li>
+                        <li>March-September: Business configuration</li>
+                        <li>May-December: Global deployment</li>
+                    </ul>
+                  </li>
+                    
+              	<li>Objective is to implement a large scale Enterprise Resource Planning system for a global manufacturing supply chain.</li>
+              </ul>
+              <p></p>
+              
+              <p>Download <a href="ERP_ProjectPlan.xlsx" class="bg-info text-white">this Excel ERPProjectPlan spreadsheet</a> which outlines the sub-projects and tasks. <br />
+              As a group, decide on the skills, costs and time costs for the tasks, and begin filling in your spreadsheet.<br />
+              Skills-chosen from a drop-down list, taken from the SFIA listing of Exercise 1<br />
+              Cost($)-your estimate of the cost in current dollars to purchase, obtain and install the item/task<br />
+              Cost(hours)-your estimate of the total time in hours for a
+ person or persons of the chosen skillset to install the item/task<br />
+              
+              </p>
+               
+                   
+              <p>(100) 6. What was the total dollar cost of all three sub-projects?<br />
+              Refer to the 'Totals' worksheet.
+              </p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q6" id="q6" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+              
+              <p>(100) 7. What was the total hours cost of all three sub-projects?<br />
+              Refer to the 'Totals' worksheet.
+                            
+              <!-- Enter your answer in the VALUE field below   GROK --><br />        
+              <input name="q7" id="q7" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text">               
+                </p>
+            
+            <p> Once you have completed this spreadsheet, print each of the four (4) worksheets as a .pdf file.</p>
+            
+            <p>(200) 8. Save your file 'MyProjectPlan.pdf' to the ' 
+                  <span id="bPath" ></span>              
+<script>document.getElementById("bPath").innerHTML = Path; </script>' folder.<br /> 
+
+          </p>
+            </div>        
+
+      <div  class="col-lg-12 text-danger" >
+         <h2>MyProjectPlan.pdf</h2>
+          <hr />
+      </div>
+
+
+              
+      
+
+      
+<!--  From here to end difference question numbers and Summative numbering for PDF of file uploaded to D2L    -->
+
+     
+    <div class="col-lg-12"><a href="#ExercisePDF" class="btn btn-info" data-toggle="collapse">Exercise-PDF File Creation</a></div>
+      
+    <div id="ExercisePDF" class="collapse in  col-lg-12"> 
+            <p>Use a web browser to verify that you have published your website to https://classes.winona.edu/... <br />
+                Check that your name, StarID, email, class, semester, section and all of your answers are correct and visible. <br />
+                From the menu choose File&gt;Print... and using &quot;Microsoft Print to PDF&quot; save a copy of this assignment as a .pdf file in your   ' 
+                  <span id="dPath" ></span>              
+<script>document.getElementById("dPath").innerHTML = Path; </script>' folder.<br /> 
+</p>
+           <br />
+               
+          <p>(50) 9. Save your file 'WebPage.pdf' to the ' 
+                  <span id="ePath" ></span>              
+<script>document.getElementById("ePath").innerHTML = Path; </script>' folder.<br /> 
+
+
+          </p>
+
+      <div  class="text-danger" >
+         <h2>WebPage.pdf</h2>
+          <hr />
+      </div>
+
+
+
+
+       <p>  &nbsp;</p>
+         <p>  Use PDFill to merge the <strong>WebPage.pdf</strong> file with the other pdf files, and save it as &#39;<strong>Summative08.pdf</strong>&#39; in ' 
+                  <span id="hPath" ></span>              
+<script>document.getElementById("hPath").innerHTML = Path; </script>' folder.<br /> 
+
+         </p>
+
+
+        <p>(50) 10. Upload your file 'Summative08.pdf' to the D2L 'Summative08' Assignment folder.</p>
+
+      <div  class="text-danger" >
+         <h2>Summative08.pdf</h2>
+      </div>
+      <hr />
+
+        </div> 
+
+
+
+
+  <div class="col-lg-12"><a href="#ExerciseAssignmentSubmission" class="btn btn-info" data-toggle="collapse">Exercise-Assignment Submission</a></div>
+ 
+  <div id="ExerciseAssignmentSubmission" class="collapse in  col-lg-12">
+                <p>Use a browser to view your completed and published website at: https://classes.winona.edu/...      <br /> 
+                    Ensure that you have linked this assignment on your home page.
+                Note that your screen shots do not have to be completed to perform this step.<br>  </p>
+
+            (50) 11. Home Page Hyperlink<br />
+            Check and verify that this assignment is hyperlinked on your home page.<br /><br />
+
+            (50) 12. Assignment submission<br />
+            Press the Submit button at the top or bottom of this page.
+                Read and follow instructions on the confirmation page.&nbsp; Correct any errors.</div> 
+           <hr />
+
+ 
+     
+      <div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+  
+  </form> 
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted" ></div>
+
+   <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-1.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="../js/bootstrap.js"></script>
+  
+</body></html>
