@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+    <script src="../js/constants.js"></script>
+
+    <!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+    <title>MIS362 Summative10</title>
+</head>
+
+<body onload="setVariables()"> 
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center">Governance, Risk, Security and Compliance</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="FirstName">First Name:</label>
+        <input class="form-control" name="FirstName" id="FirstName"  type="text" value="default first name" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="LastName">Last Name:</label>
+        <input class="form-control" name="LastName" id="LastName"  type="text" value="default last name" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="pin">StarID:</label>
+        <input class="form-control" name="pin" id="pin"  type="text" value="default StarID" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="email">Email:</label>
+        <input class="form-control" name="email" id="email"  type="email" value="default email address" readonly="readonly">
+      </div>
+    </div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="xClass" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative10" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+<!-- Calculate the correct path for saving the files -->
+<script>Path = startPath + xStarID + "&#92;OneDrive - MNSCU&#92;" + xClass + "&#92;" + document.getElementById("assignment").value + "&#92;"; </script> 
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            850 Points <hr />
+        </div>
+      
+<!-- -start-objectives-start -->
+    <div class="col-lg-12"><a href="#Objectives" class="btn btn-info" data-toggle="collapse">Learning Objectives</a></div>      
+      <div id="Objectives" class=" collapse in col-lg-12">
+
+<!--Above this line similar except for Assignment number and title   -->
+          <p>These exercises introduce governance, risk, security and compliance.</p>
+          <p>After completing this assignment you will be able to:</p>
+          <ol>
+            <li>Compare and contrast governance versus management</li>
+            <li>Identify governance key objectives</li>
+            <li>Identify risk management components</li>
+            <li>Compare and contrast assurance and audit</li>
+            <li>Identify digital security issues</li>
+            <li>Identify regulatory compliance issues</li>
+            <li>Evaluate the issues and effects of automating the digital delivery pipeline on governance</li>
+           </ol>
+          <hr />
+        </div>
+
+
+        <div class="col-lg-12"><a href="#Overview" class="btn btn-info" data-toggle="collapse">Assignment Overview</a></div>
+      
+      <div id="Overview" class="collapse in col-lg-12">
+          <p>The goal of this assignment is to familiarize you with current governance and security issues.<br />
+          You are expected to devlop a working knowledge of the following.<br />
+            If you are having trouble there are several resources available, besides a Google Search<br />
+            You can also ask a teaching assistant or ask the instructor for assistance.</p>
+          <ol>
+            <li>Governance </li>
+            <li>Compliance</li>
+            <li>Risk Management</li>
+            <li>Assurance and Audit</li>
+            <li>Security</li>
+          </ol>
+        <hr />                
+       </div>
+      
+        <div class=" col-lg-12"><a href="#Exercise01" class="btn btn-info" data-toggle="collapse">Exercise 1-Governance</a></div>        
+      
+     <div id="Exercise01" class="collapse in col-lg-12"> 
+          <p>Review the book section on 'Governance'.  Pay special attention to the factors that make governance an important concern to businesses.<br />
+          Then contemplate and answer the following questions.  </p>
+      
+          <p>Why is governance needed?<br />
+          </p>
+                
+              <p>(50) 1. Make a list of 10 factors that necessitate governance.</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> <br /><br />
+
+              <p>(50) 2. What could be the result of a business ignoring or not being aware of one of those factors?</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> <br /><br />
+               
+              <p>(50) 3. What industry is involved in governance from the aspect of helping businesses manage risk?</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> <br />
+            <hr />
+                
+            </div>        
+
+      
+      
+        <div class="col-lg-12"><a href="#Exercise02" class="btn btn-info" data-toggle="collapse">Exercise 2-Enablers</a></div>
+        <div id="Exercise02" class="collapse in col-lg-12">  
+              <p>For purposes of this exercise the terms 'standard, 
+framework, guideline, process, procedure and method' are all 
+enablers-whose purpose is to promote the workings of governance in IT 
+organizatons.  <br />
+              Review and reflect on the material in the section on Enablers, and then consider the following questions. </p>
+               
+                   
+              <p>(50) 4. Enablers are necessary to give employees the information they need to do their job correctly.<br />
+              But reading and comprehending pages of rules can be very time consuming.<br />
+              Briefly explain steps a business can take to promote the 
+use of enablers while not overwhelming employees or reducing employee 
+motivation.
+              </p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> <br /><br />
+              
+              <p>(50) 5. Review and reflect on the 'How policy begins' story under 'Policy management'.<br />
+              Briefly explain what additional steps you would take to modify your answer in question 4 above.</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> <br /><br />
+             <hr />
+              
+              
+               </div>       
+      
+      
+         <div class="col-lg-12"><a href="#Exercise03" class="btn btn-info" data-toggle="collapse">Exercise 3-Risk Management &amp; Assurance</a></div>
+      
+        <div id="Exercise03" class="collapse in col-lg-12">  
+
+              <p>Choose one of the '<a href="http://www.zdnet.com/article/the-top-10-it-disasters-of-all-time-5000177729/" class="bg-info text-white" target="_blank">Top 10 IT disasters of all time</a>' for review.</p>
+              <p>Review the material in the Risk Management section of the chapter.<br />
+               For the IT disaster you chose to review, consider how risk management could have been employed to avert disaster.</p>
+              
+                   
+                  <p>(50) 6. Make a brief list of steps risk management policies that would have prevented the disaster.<br />
+                                
+                  <!-- Enter your answer in the VALUE field below   GROK -->        
+                  <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"></p><br />
+     
+                  <p>(50) 7. Reflecting on the disaster, was training (or lack of training) a primary factor?<br />
+                  Briefly state the role training played in the disaster.<br />
+                                
+                  <!-- Enter your answer in the VALUE field below   GROK -->        
+                  <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"></p><br />
+                  
+                  <p>(50) 8. Review the section on business continuity.  <br />
+                  Make a brief list of arguments that could be used to 
+persuade a business owner to implement a solid disaster recovery and 
+business continuity plan.<br />
+                                
+                  <!-- Enter your answer in the VALUE field below   GROK -->        
+                  <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"></p><br />
+                  
+                  <p>(50) 9. Review the section on Assurance.<br />
+                  Assume you are employed in as a business assurance analyst.<br />
+                  Make a brief list of steps you would take so that the 
+employees whose behavior you had to verify do not dread when you appear 
+in their offices.<br />
+                                    
+                  <!-- Enter your answer in the VALUE field below   GROK -->        
+                  <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> </p><br />
+                <hr />
+                       
+              </div>  
+
+
+         <div class="col-lg-12"><a href="#Exercise04" class="btn btn-info" data-toggle="collapse">Exercise 4-Security</a></div>
+      
+        <div id="Exercise04" class="collapse in col-lg-12"> 
+            
+              <p>Security is an incredibly important issue for businesses that relay on digital delivery of services.<br />
+              But clients and customers become irritated when security impedes convenience.<br />
+              Do you enjoy being forced to change your passwords for multiple accounts every six months?<br />
+              Steve Gibson's <a href="https://www.grc.com/securitynow.htm" class="bg-info text-white" target="_blank">'Security Now' Podcast</a> is an excellent way to keep up with the latest security issues.<br />
+              Review the section on security and answer the following questions.</p> 
+                
+            
+                  <p>(50) 10. Resarch the term 'asymmetric threat'.<br />
+                  This is a military term, but it has relevance in the corporate security context.<br />
+                  Briefly explain the asymmetric security threat posed by a lone 'black hat hacker' trying to exfiltrate corporate data. <br />
+                  
+                  <!-- Enter your answer in the VALUE field below   GROK -->        
+                  <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> </p><br />
+
+                  <p>(50) 11. Make a brief list of some steps a business can take to defend against 'asymmetric digital security threats'.<br />
+                  
+                  <!-- Enter your answer in the VALUE field below   GROK -->        
+                  <input name="q11" id="q11" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> </p><br />
+            <hr />
+
+              </div>  
+     
+         <div class="col-lg-12"><a href="#Exercise05" class="btn btn-info" data-toggle="collapse">Exercise 5-Digital Governance</a></div>
+      
+        <div id="Exercise05" class="collapse in col-lg-12">  
+
+              <p>Read the '<a href="DevOps_Audit_Defense_Toolkit_v1.0.pdf" class="bg-info text-white" target="_blank">DevOps Audit Defense Toolkit</a>'.<br />
+              On page 12, at the beginning of Section 5.1 the auditors make the statement 'the absence of separation of duty and change approval controls create the risk of untested and unauthorized code being introduced into production'<br />
+              Answer the following questions pertaining to this statement. </p>   
+                    
+            
+                  <p>(50) 12. Briefly explain why the auditors are worried about 'separation of duty'.<br />
+                                    
+                  <!-- Enter your answer in the VALUE field below   GROK -->        
+                  <input name="q12" id="q12" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> </p><br />
+    
+                  <p>(50) 13. Briefly summarize how management responded to the 'separation of duty' concerns raised by the auditors.<br />
+                                    
+                  <!-- Enter your answer in the VALUE field below   GROK -->        
+                  <input name="q13" id="q13" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> </p>
+            <hr />
+    
+              </div>  
+     
+
+
+
+<!--  From here to end difference question numbers and Summative numbering for PDF of file uploaded to D2L    -->
+
+     
+    <div class="col-lg-12"><a href="#ExercisePDF" class="btn btn-info" data-toggle="collapse">Exercise-PDF File Creation</a></div>
+      
+    <div id="ExercisePDF" class="collapse in  col-lg-12"> 
+            <p>Use a web browser to verify that you have published your website to https://classes.winona.edu/... <br />
+                Check that your name, StarID, email, class, semester, section and all of your answers are correct and visible. <br />
+                From the menu choose File&gt;Print... and using &quot;Microsoft Print to PDF&quot; save a copy of this assignment as a .pdf file in your   ' 
+                  <span id="dPath" ></span>              
+<script>document.getElementById("dPath").innerHTML = Path; </script>' folder.<br /> 
+</p>
+           <br />
+               
+          <p>Save your file 'Summative10.pdf' to the ' 
+                  <span id="ePath" ></span>              
+<script>document.getElementById("ePath").innerHTML = Path; </script>' folder.<br /> 
+
+
+          </p>
+
+
+
+       <p>(100) 14. Upload your file 'Summative10.pdf' to the D2L 'Summative10' Assignment folder.</p>
+
+      <div  class="text-danger" >
+         <h2>Summative10.pdf</h2>
+      </div>
+      <hr />
+
+        </div> 
+
+
+
+
+  <div class="col-lg-12"><a href="#ExerciseAssignmentSubmission" class="btn btn-info" data-toggle="collapse">Exercise-Assignment Submission</a></div>
+ 
+  <div id="ExerciseAssignmentSubmission" class="collapse in  col-lg-12">
+                <p>Use a browser to view your completed and published website at: https://classes.winona.edu/...      <br /> 
+                    Ensure that you have linked this assignment on your home page.
+                Note that your screen shots do not have to be completed to perform this step.<br>  </p>
+
+            (50) 15. Home Page Hyperlink<br />
+            Check and verify that this assignment is hyperlinked on your home page.<br /><br />
+
+            (50) 16. Assignment submission<br />
+            Press the Submit button at the top or bottom of this page.
+                Read and follow instructions on the confirmation page.&nbsp; Correct any errors.</div> 
+           <hr />
+
+ 
+     
+      <div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+  
+  </form> 
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted" ></div>
+
+   <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-1.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="../js/bootstrap.js"></script>
+  
+</body></html>
