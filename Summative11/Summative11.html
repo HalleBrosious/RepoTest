@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+    <script src="../js/constants.js"></script>
+
+    <!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+    <title>MIS362 Summative11</title>
+</head>
+
+<body onload="setVariables()"> 
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center">Enterprise Information Management</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="FirstName">First Name:</label>
+        <input class="form-control" name="FirstName" id="FirstName"  type="text" value="default first name" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="LastName">Last Name:</label>
+        <input class="form-control" name="LastName" id="LastName"  type="text" value="default last name" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="pin">StarID:</label>
+        <input class="form-control" name="pin" id="pin"  type="text" value="default StarID" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="email">Email:</label>
+        <input class="form-control" name="email" id="email"  type="email" value="default email address" readonly="readonly">
+      </div>
+    </div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="xClass" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative11" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+<!-- Calculate the correct path for saving the files -->
+<script>Path = startPath + xStarID + "&#92;OneDrive - MNSCU&#92;" + xClass + "&#92;" + document.getElementById("assignment").value + "&#92;"; </script> 
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            600 Points <hr />
+        </div>
+      
+<!-- -start-objectives-start -->
+    <div class="col-lg-12"><a href="#Objectives" class="btn btn-info" data-toggle="collapse">Learning Objectives</a></div>      
+      <div id="Objectives" class=" collapse in col-lg-12">
+
+<!--Above this line similar except for Assignment number and title   -->
+  
+          <p>These exercises introduce the several concepts of Enterprise Information Management.</p>
+          <p>After completing this assignment you will be able to:</p>
+          <ol>
+            <li>Identify the major components of an Enterprise Information Management (EIM) system</li>
+            <li>Identify the sources of value in an EIM</li>
+            <li>Develop a framework for understanding EIM</li>
+            <li>Identify the major components required to manage information resources</li>
+            <li>Evaluate the relationship between EIM and Agile Information Management techniques</li>
+           </ol>
+          <hr />
+        </div>
+  
+  
+        <div class="col-lg-12"><a href="#Overview" class="btn btn-info" data-toggle="collapse">Assignment Overview</a></div>
+      
+      <div id="Overview" class="collapse in col-lg-12">
+      
+         <p> The goal of this assignment is to familiarize you with the various operations management systems. <br />
+          You are expected to devlop a working knowledge of the following.<br />
+            If you are having trouble there are several resources available, besides a Google Search<br />
+            You can also ask a teaching assistant or ask the instructor for assistance.</p>
+          <ol>
+            <li>Operations Management Tools
+            	<ol>
+                	<li>Systems Monitoring</li>
+                    <li>Event Management</li>
+                </ol>
+            </li>
+            <li>Change Management </li>
+            <li>Incident Management</li>
+            <li>Operatonal Feedback</li>
+            <li>Performance Management</li>
+                </ol>
+          <hr />
+      </div>
+      
+        <div class=" col-lg-12"><a href="#Exercise01" class="btn btn-info" data-toggle="collapse" aria-expanded="true">Exercise 1-Information and Value</a></div>        
+      
+     <div id="Exercise01" class="collapse in col-lg-12"> 
+          <p>Review the chapter section on 'Information and Value'.<br />
+          Then contemplate and answer the following questions.  </p>
+          <p>Information is a central topic throughout this semester.<br />
+          The systems and topics discussed focus on transforming various
+ types of data into information that adds or provides value.<br />
+          </p>
+                
+              <p>(50) 1. Briefly state why oral or written communication is valuable to the human species.</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q1" id="q1" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+
+              <p>(50) 2. Provide an example of 'analog' information.</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q2" id="q2" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+
+              <p>(50) 3. Assume you have two pieces of data representing the information in the corporate annual report.<br />
+              One is in an analog format, the other is in a digital format.<br />
+              List an advantage that 'digital' information has over 'analog' information when making copies of the this data.</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q3" id="q3" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+
+              <p> Consider the recent rapid growth of the '<a href="https://en.wikipedia.org/wiki/Internet_of_things" class="bg-info text-white" target="_blank">Internet of Things</a>'.<br />
+              Review <a href="https://vimeo.com/7395079" class="bg-info text-white" target="_blank">this video </a> discussing the impact and 
+management challenges that these trillions of IoT devices will pose.</p>
+              <p>This is a short film (based on our  book about Trillions) by MAYA Design created to put some perspective on the invisible but fast approaching challenges and opportunities in the pervasive computing age.<br />
+<br />
+ For more information please visit: <a href="https://www.maya.com/" class="bg-info text-white" target="_blank">https://www.maya.com/</a><br />
+              </p>
+                
+                (50) 4. The authors state that nature has already solved
+ the problem of dealing with the systems that we will have to deal with 
+these trillions of Internet of Things devices. <br />
+                What is the term used to describe this system?<br />	
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q4" id="q4" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+
+
+                 The adoption of IoT devices has resulted in the 
+creation of large amounts of digital data and the rise of the profession
+ of 'data science' and big data. Research an example of a digital 
+product or service that involves big data or data science.<br />
+                 
+                (50) 5. What digital product or service did you chose?<br />	
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q5" id="q5" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+              
+                (50) 6. Briefly explain how this new digital product or service is disrupting the industry.<br />	
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q6" id="q6" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+         <hr />
+
+          </div>        
+
+        <div class="col-lg-12"><a href="#Exercise02" class="btn btn-info" data-toggle="collapse">Exercise 2-Information Management Framework</a></div>
+
+        <div id="Exercise02" class="collapse in col-lg-12">  
+              <p>Review the section of the chapter on information management framework.</p>
+               
+                   
+              <p>(50) 7. Reflect on what you have learned in this course, and on the issues raised by the IoT and the Trillions video.<br />
+              Briefly list what you think will be several prominent issues that businesses face from these new technologies.
+              </p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q7" id="q7" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+              
+              <p>(50) 8. Reflect on what you have learned about digital management, Agile and DevOps.<br />
+              Briefly list a way in which Agile and DevOps methodologies can address one of those prominent issues.</p>
+                            
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q8" id="q8" size="120" maxlength="120"  class="form-control" value="Enter your answer here" type="text"> <br /><br />
+              <hr />
+              
+               </div>       
+      
+      
+<!--  From here to end difference question numbers and Summative numbering for PDF of file uploaded to D2L    -->
+
+     
+    <div class="col-lg-12"><a href="#ExercisePDF" class="btn btn-info" data-toggle="collapse">Exercise-PDF File Creation</a></div>
+      
+    <div id="ExercisePDF" class="collapse in  col-lg-12"> 
+            <p>Use a web browser to verify that you have published your website to https://classes.winona.edu/... <br />
+                Check that your name, StarID, email, class, semester, section and all of your answers are correct and visible. <br />
+                From the menu choose File&gt;Print... and using &quot;Microsoft Print to PDF&quot; save a copy of this assignment as a .pdf file in your   ' 
+                  <span id="dPath" ></span>              
+<script>document.getElementById("dPath").innerHTML = Path; </script>' folder.<br /> 
+</p>
+           <br />
+               
+          <p>Save your file 'Summative11.pdf' to the ' 
+                  <span id="ePath" ></span>              
+<script>document.getElementById("ePath").innerHTML = Path; </script>' folder.<br /> 
+
+
+          </p>
+
+
+
+       <p>(100) 9. Upload your file 'Summative11.pdf' to the D2L 'Summative11' Assignment folder.</p>
+
+      <div  class="text-danger" >
+         <h2>Summative11.pdf</h2>
+      </div>
+      <hr />
+
+        </div> 
+
+
+
+
+  <div class="col-lg-12"><a href="#ExerciseAssignmentSubmission" class="btn btn-info" data-toggle="collapse">Exercise-Assignment Submission</a></div>
+ 
+  <div id="ExerciseAssignmentSubmission" class="collapse in  col-lg-12">
+                <p>Use a browser to view your completed and published website at: https://classes.winona.edu/...      <br /> 
+                    Ensure that you have linked this assignment on your home page.
+                Note that your screen shots do not have to be completed to perform this step.<br>  </p>
+
+            (50) 10. Home Page Hyperlink<br />
+            Check and verify that this assignment is hyperlinked on your home page.<br /><br />
+
+            (50) 11. Assignment submission<br />
+            Press the Submit button at the top or bottom of this page.
+                Read and follow instructions on the confirmation page.&nbsp; Correct any errors.</div> 
+           <hr />
+
+ 
+     
+      <div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+  
+  </form> 
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted" ></div>
+
+   <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-1.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="../js/bootstrap.js"></script>
+  
+</body></html>
